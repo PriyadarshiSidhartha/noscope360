@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>noscope360 - Game Deals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>noscope360 - PC Game Deals</h1>
+  
+  <div id="filter-buttons">
+    <button onclick="fetchGames('all')">All</button>
+    <button onclick="fetchGames('Shooter')">Shooter</button>
+    <button onclick="fetchGames('MMO')">MMO</button>
+    <button onclick="fetchGames('RPG')">RPG</button>
+    <button onclick="fetchGames('Strategy')">Strategy</button>
+    <button onclick="fetchGames('Racing')">Racing</button>
+    <button onclick="fetchGames('Sports')">Sports</button>
+  </div>
+
+  <p id="status-message">Loading...</p>
+
+  <div id="games-grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

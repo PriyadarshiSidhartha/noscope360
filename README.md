@@ -6,16 +6,19 @@ A website for gaming updates and community.
 
 ## Features
 
-- Get personalized news and updates on your preffered genre, platform, etc.
-- Build your profile and your own collection of games you want to play.
+- Get news and updates on Games filtered by categories.
 
 ---
 
 ## Tech Stack
 
-- React
 - Javascript
 - HTML
 - CSS
 
 ---
+
+## API(s) Used
+
+we may use other api, multiple different apis in future but for now we are using:
+- CheapShark API (`https://www.cheapshark.com/api/1.0/deals`)
