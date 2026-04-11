@@ -81,7 +81,7 @@ function renderGames() {
       <h3>${game.title}</h3>
       <img src="${game.thumb}" alt="thumb">
       <p>Sale: $${game.salePrice} (was $${game.normalPrice})</p>
-      <a href="https://www.cheapshark.com/redirect?dealID=${game.dealID}" target="_blank">View Deal</a>
+      <a class="deal-link" href="https://www.cheapshark.com/redirect?dealID=${game.dealID}" target="_blank">View Deal</a>
     </div>
   `).join('');
 }

@@ -1,7 +1,5 @@
 body {
-  background-color: rgb(32, 32, 32);
   font-family: sans-serif;
-  color: white;
   margin: 20px;
 }
 
@@ -13,7 +11,7 @@ body {
 }
 
 .game-card {
-  border: 1px solid #000000;
+  border: 1px solid #8f8f8f;
   padding: 10px;
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -22,4 +20,8 @@ body {
 .game-card img {
   max-width: 100%;
   height: auto;
+}
+
+.deal-link {
+  color: #1b9510;
 }
