@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>noscope360 - Game Deals</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <h1>noscope360 - PC Game Deals</h1>
-  
+
   <div id="filter-buttons">
     <button onclick="fetchGames('all')">All</button>
     <button onclick="fetchGames('Shooter')">Shooter</button>
@@ -18,10 +20,22 @@
     <button onclick="fetchGames('Sports')">Sports</button>
   </div>
 
+  <div id="controls" style="margin-top: 15px; display: flex; gap: 10px;">
+    <input type="text" id="search-input" placeholder="Search games...">
+    <select id="sort-select">
+      <option value="default">Sort By: Default</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="title-asc">Title: A-Z</option>
+      <option value="title-desc">Title: Z-A</option>
+    </select>
+  </div>
+
   <p id="status-message">Loading...</p>
 
   <div id="games-grid"></div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
