@@ -33,13 +33,13 @@ async function fetchGames(category) {
       return;
     }
 
-    statusMessage.textContent = `Found ${games.length} API deals`;
+    statusMessage.textContent = `Found ${games.length} deals`;
     allGames = games.slice(0, 40); // Store up to 40 games globally
-    
+
     // Reset search and sort on new category fetch
     searchInput.value = '';
     sortSelect.value = 'default';
-    
+
     renderGames();
 
   } catch (err) {
@@ -52,7 +52,7 @@ function renderGames() {
   const sortOption = sortSelect.value;
 
   // Filter games based on search input
-  let processedGames = allGames.filter(game => 
+  let processedGames = allGames.filter(game =>
     game.title.toLowerCase().includes(searchTerm)
   );
 
